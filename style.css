@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+.navbar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e88e5;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1e88e5;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #444;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #1e88e5;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    background: #1565c0;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:768px) {
+    body {
+        overflow: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 30px;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
